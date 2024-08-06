@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <p>Qual o país onde você nasceu?</p>
+    <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar() {
+            var p = document.querySelector('input#país')
+            var res = document.querySelector('div#res')
+            res.innerHTML = 'Você é '
+            
+            if (p === 'Brasil') {
+                res.innerHTML += '<b>Brasileiro</b>!'
+            } else {
+                res.innerHTML += '<b>estrangeiro</b>!'
+            }
+        }
+    </script>
+
+</body>
+</html>
