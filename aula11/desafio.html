@@ -19,10 +19,11 @@
     <script>
         function clicar() {
             var p = document.getElementById('país')
+            var país = p.value
             var res = document.querySelector('div#res')
             res.innerHTML = 'Você é '
             
-            if (p == 'Brasil') {
+            if (país == 'Brasil' || país == 'brasil') {
                 res.innerHTML += '<b>Brasileiro</b>!'
             } else {
                 res.innerHTML += '<b>estrangeiro</b>!'
