@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font: normal 18pt Arial;
+}
+
+body {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
