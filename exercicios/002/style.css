@@ -8,8 +8,28 @@
 
 body {
     background-color: lightsalmon;
-    display: flex;
-    flex-flow: column nowrap;
 }
 
+header {
+    color: white;
+    text-align: center;
+    margin: 35px;
+}
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+section {
+    background-color: white;
+    /*width: 800px;*/
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349);
+}
+
+section > p {
+    padding: 10px;
+}
