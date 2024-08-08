@@ -4,59 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hora do dia</title>
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body#fundo {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(241, 216, 71);
-        }
-
-        main {
-            display: flex;   
-            flex-flow: column nowrap;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        main > h1 {
-            color: rgba(0, 0, 0, 0.623);
-            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.507);
-            margin: 40px;
-            font-size: 3em;
-        }
-
-        #container {
-            background-color: white;
-            height: 400px;
-            width: 550px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
-        }
-
-        #container > p {
-            text-align: center;
-            padding-top: 20px;
-            font-size: 1.4em;
-            line-height: 35px;
-        }
-
-        #container > #imagem {
-            display: block;
-            margin: auto;
-            padding: 30px 0px;
-        }
-
-        main > p {
-            color: rgba(0, 0, 0, 0.678);
-            text-shadow: 0px 0px 1px rgb(0, 0, 0);
-            margin: 20px; 
-            font-size: 1.2em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="fundo" onload="carregar()">
     <main>
