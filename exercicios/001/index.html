@@ -41,13 +41,13 @@
             text-align: center;
             padding-top: 20px;
             font-size: 1.4em;
+            line-height: 35px;
         }
 
         #container > #imagem {
             display: block;
             margin: auto;
             padding: 30px 0px;
-            border-radius: 40%;
         }
 
         main > p {
@@ -58,34 +58,18 @@
         }
     </style>
 </head>
-<body id="fundo">
+<body id="fundo" onload="carregar()">
     <main>
         <h1>Hora do Dia</h1>
         <div>
             <section id="container">
-                <p id="frase">Agora são 12 horas</p>
-                <img id="imagem" src="imagens/manha-pq.jpg" alt="Manhã">
+                <p id="frase"></p>
+                <img id="imagem" src="imagens/manha.png" alt="Manhã">
             </section>
         </div>
         <p>©️ CursoemVideo</p>
     </main>
 
-    <script>
-        var hora = new Date()
-        var horaAgora = hora.getHours()
-        var frase = document.getElementById('frase')
-        var cor = document.getElementById('fundo')
-        var ft = document.getElementById('imagem')
-        var foto = ft.value
-        frase.innerHTML = `Agora são ${horaAgora} horas.`
-      //  var horaAgora = 15
-        if (horaAgora < 12) {
-            cor.style.background = 'yellow'
-        } else if (horaAgora <= 18) {
-            cor.style.background = 'orange'
-        } else {
-            cor.style.background = 'gray'
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
