@@ -7,13 +7,18 @@
 }
 
 body {
-    background-color: lightsalmon;
+    background-color: rgb(112, 157, 240);
 }
 
 header {
     color: white;
     text-align: center;
     margin: 35px;
+}
+
+header > h1 {
+    font-size: 2em;
+    text-decoration: underline;
 }
 
 main {
@@ -23,8 +28,9 @@ main {
 } 
 
 section {
+    display: flex;
+    flex-flow: column;
     background-color: white;
-    /*width: 800px;*/
     padding: 25px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.349);
